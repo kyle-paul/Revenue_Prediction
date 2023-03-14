@@ -4,6 +4,7 @@ st.title("REVENUE PREDICTION")
 x = st.number_input('Input temperature')
 
 import pickle
+from sklearn.linear_model import LinearRegression
 filename = 'model.pickle'
 model = pickle.load(open(filename, "rb"))
 
